@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Бограч — ресторан традиційної закарпатської кухні в Мукачеві. Справжні рецепти, бограч і домашня атмосфера.">
+  <title>Бограч — традиційна закарпатська кухня</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#hero" aria-label="Бограч — на головну">
+      <span class="logo-mark">Б</span>
+      <span>
+        <strong>БОГРАЧ</strong>
+        <small>Мукачево · Закарпаття</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Основна навігація">
+      <a href="#about">Про нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#takeaway">Навиніс</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+
+    <a class="header-phone" href="tel:+380000000000">+38 (000) 000-00-00</a>
+    <button class="menu-toggle" aria-label="Відкрити меню" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <img class="hero-bg" src="/assets/bograch-hero.png" alt="Традиційний закарпатський бограч">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Традиційна закарпатська кухня · Мукачево</p>
+        <h1>Справжній бограч —<br><em>так, як готували наші прадіди</em></h1>
+        <p class="hero-text">Смак Закарпаття, який збирає за одним столом.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacts">Забронювати столик <span>↗</span></a>
+          <a class="btn btn-outline" href="#takeaway">Замовити на виніс <span>→</span></a>
+        </div>
+      </div>
+      <a class="scroll-down" href="#about" aria-label="Перейти до наступної секції">
+        <span>Гортайте вниз</span>
+        <i>↓</i>
+      </a>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="section-label reveal">01 <span>Про страву</span></div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">Вогонь · казан · традиція</p>
+          <h2>Не просто страва.<br><em>Це частина Закарпаття.</em></h2>
+          <p>Бограч — це густа, навариста страва, яку на Закарпатті поколіннями готували просто неба в казані над вогнем. Ми зберігаємо цю традицію, використовуючи щедрі порції м’яса, паприку, овочі та перевірені часом рецепти.</p>
+          <p>Тут усе просто: добрі продукти, повільне приготування і смак, заради якого хочеться повернутися.</p>
+        </div>
+        <div class="about-card reveal">
+          <span class="quote-mark">“</span>
+          <p>Готувати треба не поспіхом, а з душею.</p>
+          <span class="card-line"></span>
+          <small>Закарпатська традиція</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-label">02 <span>Меню</span></div>
+          <div>
+            <p class="eyebrow">Смаки нашого краю</p>
+            <h2>З кухні — <em>прямо до столу</em></h2>
+          </div>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <div class="dish-image"><span>Фото страви</span></div>
+            <div class="dish-info"><h3>Бограч-гуляш</h3><strong>240 ₴</strong><p>Традиційний, наваристий, з ароматною паприкою.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="dish-image"><span>Фото страви</span></div>
+            <div class="dish-info"><h3>Бограч по-закарпатськи</h3><strong>280 ₴</strong><p>Щедра порція м’яса та овочів у густому бульйоні.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="dish-image"><span>Фото страви</span></div>
+            <div class="dish-info"><h3>Банош з бринзою</h3><strong>220 ₴</strong><p>Ніжна кукурудзяна каша, бринза та шкварки.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="dish-image"><span>Фото страви</span></div>
+            <div class="dish-info"><h3>Деруни зі сметаною</h3><strong>180 ₴</strong><p>Хрусткі деруни з домашньою сметаною.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="dish-image"><span>Фото страви</span></div>
+            <div class="dish-info"><h3>Закарпатська ковбаска</h3><strong>260 ₴</strong><p>Запечена ковбаска зі спеціями та гарніром.</p></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="dish-image"><span>Фото страви</span></div>
+            <div class="dish-info"><h3>Грибна юшка</h3><strong>160 ₴</strong><p>Ароматна юшка з лісових грибів.</p></div>
+          </article>
+        </div>
+
+        <div class="center-action reveal">
+          <a class="text-link" href="#contacts">Переглянути повне меню <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="takeaway section" id="takeaway">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-label">03 <span>Навиніс</span></div>
+          <div>
+            <p class="eyebrow">Смак Закарпаття з собою</p>
+            <h2>Замовити — <em>просто</em></h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-step reveal">
+            <span class="step-number">01</span>
+            <div class="step-icon">☎</div>
+            <h3>Зателефонуйте<br>або напишіть</h3>
+            <p>Повідомте, що саме хочете замовити, і кількість порцій.</p>
+          </article>
+          <div class="timeline-line"></div>
+          <article class="timeline-step reveal">
+            <span class="step-number">02</span>
+            <div class="step-icon">◷</div>
+            <h3>Ми приготуємо<br>до вашого часу</h3>
+            <p>Підкажемо точний час, коли замовлення буде готове.</p>
+          </article>
+          <div class="timeline-line"></div>
+          <article class="timeline-step reveal">
+            <span class="step-number">03</span>
+            <div class="step-icon">⌖</div>
+            <h3>Заберіть у нас<br>та смакуйте</h3>
+            <p>Приїжджайте за адресою. Оплата — готівкою або карткою.</p>
+          </article>
+        </div>
+
+        <div class="takeaway-cta reveal">
+          <span>Замовлення навиніс</span>
+          <a href="tel:+380000000000">+38 (000) 000-00-00 <b>→</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts section" id="contacts">
+      <div class="container contacts-grid">
+        <div class="contact-info reveal">
+          <div class="section-label">04 <span>Контакти</span></div>
+          <p class="eyebrow">Чекаємо на вас у Мукачеві</p>
+          <h2>Зустрінемось<br><em>за столом</em></h2>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <span>Адреса</span>
+              <strong>м. Мукачево, вул. Прикладна, 10</strong>
+            </div>
+            <div class="contact-item">
+              <span>Телефон</span>
+              <a href="tel:+380000000000">+38 (000) 000-00-00</a>
+            </div>
+            <div class="contact-item">
+              <span>Instagram</span>
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">@bograch.mukachevo ↗</a>
+            </div>
+          </div>
+
+          <a class="btn btn-primary" href="tel:+380000000000">Забронювати столик <span>↗</span></a>
+        </div>
+
+        <div class="map-wrap reveal">
+          <iframe
+            title="Карта розташування ресторану Бограч"
+            src="https://www.google.com/maps?q=Mukachevo%2C%20Ukraine&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="map-label"><span>Б</span> Бограч · Мукачево</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#hero">
+          <span class="logo-mark">Б</span>
+          <span><strong>БОГРАЧ</strong><small>Мукачево · Закарпаття</small></span>
+        </a>
+        <p>Справжня закарпатська кухня.<br>З любов’ю до традицій.</p>
+      </div>
+      <div class="hours">
+        <span>Години роботи</span>
+        <strong>Пн–Нд · 10:00–22:00</strong>
+      </div>
+      <div class="footer-copy">© 2026 Бограч. Усі права захищені.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
