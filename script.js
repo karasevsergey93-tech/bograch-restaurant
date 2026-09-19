@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const menuLabels = document.documentElement.lang === "en"
+    ? { open: "Open menu", close: "Close menu" }
+    : { open: "Відкрити меню", close: "Закрити меню" };
 
   document.documentElement.classList.add("js");
 
@@ -30,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const setMenuState = (isOpen) => {
     nav?.classList.toggle("open", isOpen);
     toggle?.setAttribute("aria-expanded", String(isOpen));
-    toggle?.setAttribute("aria-label", isOpen ? "Закрити меню" : "Відкрити меню");
+    toggle?.setAttribute("aria-label", isOpen ? menuLabels.close : menuLabels.open);
   };
 
   toggle?.addEventListener("click", () => {

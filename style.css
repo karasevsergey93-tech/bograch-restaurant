@@ -37,6 +37,9 @@ button { font: inherit; }
 .nav { display: flex; gap: 28px; margin-left: auto; }
 .nav a, .header-link { color: #cfc3b6; font-size: 12px; transition: color .25s ease; }
 .header-link { border-left: 1px solid var(--line); padding-left: 28px; color: var(--copper-light); }
+.lang-switch { display: flex; align-items: center; gap: 6px; color: #776d64; font-size: 10px; font-weight: 700; letter-spacing: .08em; }
+.lang-switch a { color: inherit; transition: color .25s ease; }
+.lang-switch a[aria-current="page"] { color: var(--copper-light); }
 .menu-toggle { display: none; border: 0; background: transparent; width: 42px; height: 42px; }
 .menu-toggle span { display: block; width: 24px; height: 1px; background: var(--text); margin: 6px auto; }
 
@@ -155,6 +158,7 @@ em { color: var(--copper-light); font-style: italic; }
 
 @media (hover: hover) {
   .nav a:hover, .header-link:hover { color: var(--copper-light); }
+  .lang-switch a:hover { color: var(--copper-light); }
   .btn-primary:hover { background: var(--copper-light); transform: translateY(-2px); }
   .btn-outline:hover { border-color: var(--copper); color: var(--copper-light); transform: translateY(-2px); }
   .menu-card:hover { border-color: var(--line); transform: translateY(-5px); }
@@ -163,9 +167,10 @@ em { color: var(--copper-light); font-style: italic; }
   .btn:active, .menu-card:active { transform: scale(.985); }
 }
 @media (max-width: 900px) {
-  .site-header { padding: 16px 24px; }
+  .site-header { padding: 16px 24px; gap: 16px; }
   .nav, .header-link { display: none; }
-  .menu-toggle { display: block; margin-left: auto; }
+  .lang-switch { margin-left: auto; }
+  .menu-toggle { display: block; margin-left: 0; }
   .nav.open { display: flex; position: absolute; top: 70px; left: 0; width: 100%; padding: 22px 24px; border-top: 1px solid var(--line); background: rgba(17,16,15,.98); flex-direction: column; gap: 18px; }
   .hero-content { margin-left: 24px; }
   .about-grid, .section-heading, .concept-grid { grid-template-columns: 1fr; gap: 25px; }
@@ -202,6 +207,9 @@ em { color: var(--copper-light); font-style: italic; }
   .panel-content li { font-size: 23px; }
   .footer-grid { grid-template-columns: 1fr; gap: 25px; }
   .footer-copy { grid-column: auto; }
+}
+@media (max-width: 380px) {
+  .logo small { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
