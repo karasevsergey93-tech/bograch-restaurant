@@ -27,15 +27,19 @@ document.addEventListener("DOMContentLoaded", () => {
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
 
+  const setMenuState = (isOpen) => {
+    nav?.classList.toggle("open", isOpen);
+    toggle?.setAttribute("aria-expanded", String(isOpen));
+    toggle?.setAttribute("aria-label", isOpen ? "Закрити меню" : "Відкрити меню");
+  };
+
   toggle?.addEventListener("click", () => {
-    const isOpen = nav?.classList.toggle("open") ?? false;
-    toggle.setAttribute("aria-expanded", String(isOpen));
+    setMenuState(!nav?.classList.contains("open"));
   });
 
   nav?.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      toggle?.setAttribute("aria-expanded", "false");
+      setMenuState(false);
     });
   });
 });
