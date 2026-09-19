@@ -100,19 +100,9 @@ em { color: var(--copper-light); font-style: italic; }
 .menu-card { background: var(--card); border: 1px solid rgba(255,255,255,.045); transition: transform .3s ease, border-color .3s ease; }
 .dish-image {
   height: 245px; position: relative; overflow: hidden;
-  background: radial-gradient(circle at 50% 45%, rgba(184,117,78,.20), transparent 35%), linear-gradient(135deg, #2a211d, #141210);
+  background: #211c19;
 }
-.dish-image::before { content: ""; position: absolute; inset: 0; opacity: .88; mix-blend-mode: screen; }
-.dish-image::after {
-  content: "Б"; position: absolute; right: 18px; bottom: -18px; color: rgba(211,154,109,.15);
-  font: 700 160px/.8 "Cormorant Garamond", serif;
-}
-.dish-1::before { background: radial-gradient(ellipse at 58% 50%, #9b3d19 0 14%, #421d12 15% 26%, transparent 27%), radial-gradient(ellipse at 45% 58%, #efaa4d 0 8%, transparent 9%), linear-gradient(135deg, #2b1711, #080807); }
-.dish-2::before { background: radial-gradient(ellipse at 47% 48%, #d07b31 0 16%, #6d2a17 17% 29%, transparent 30%), radial-gradient(circle at 62% 36%, #e5b65b 0 5%, transparent 6%), linear-gradient(145deg, #1d1110, #573020); }
-.dish-3::before { background: radial-gradient(ellipse at 48% 58%, #edc867 0 23%, #805a25 24% 29%, transparent 30%), radial-gradient(circle at 67% 36%, #f3ead8 0 6%, transparent 7%), linear-gradient(135deg, #211813, #5b3b1d); }
-.dish-4::before { background: repeating-radial-gradient(circle at 48% 49%, #c78a4a 0 10px, #6e361d 12px 20px, #281510 22px 30px), linear-gradient(135deg, #18100d, #6a3c20); }
-.dish-5::before { background: linear-gradient(28deg, transparent 38%, #7d351d 39% 51%, transparent 52%), linear-gradient(150deg, transparent 43%, #d17d36 44% 56%, transparent 57%), radial-gradient(ellipse at 50% 52%, #3e1d13 0 31%, transparent 32%), linear-gradient(135deg, #1b110e, #5b301c); }
-.dish-6::before { background: radial-gradient(circle at 37% 39%, #9e8055 0 7%, transparent 8%), radial-gradient(circle at 63% 58%, #c4a57a 0 9%, transparent 10%), radial-gradient(ellipse at 50% 51%, #5b3822 0 28%, transparent 29%), linear-gradient(135deg, #17120e, #4e3020); }
+.dish-image img { width: 100%; height: 100%; object-fit: cover; }
 .dish-info { padding: 20px 20px 23px; }
 .dish-info h3 { display: inline; font: 600 26px/1.05 "Cormorant Garamond", serif; }
 .dish-info strong { float: right; color: var(--copper-light); font-size: 14px; }
